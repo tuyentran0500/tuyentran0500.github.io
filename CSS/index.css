@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: beige 2px;
+    background-color: gray;
+    border: 2px solid rgb(32, 36, 36);
+}
+h2 {
+    text-decoration-style: wavy;
+}
+
+#menu{
+    float: left;
+    width: 10%;
+    margin: 5px;
+    /* padding: 5px; */
+    border: 2px gray solid;
+    
+}
+.menu {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 2px;
+    text-align: center;
+    background-color: gainsboro;
+    border: 1px solid gray;
+}
+#content{
+    /* background-color: aliceblue; */
+    display: inline-block;
+    /* border: 2px solid gray; */
+    /* background-color: aliceblue */
+    color: white;
+}
