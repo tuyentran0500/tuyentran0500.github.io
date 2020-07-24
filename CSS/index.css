@@ -33,3 +33,21 @@ h2 {
     /* background-color: aliceblue */
     color: white;
 }
+button {
+    /* position: fixed; */
+    top : 20px;
+    color : white;
+    background-color: gray;
+}
+
+
+.snowflake {
+    position: fixed;
+    background-color: #CCC;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }

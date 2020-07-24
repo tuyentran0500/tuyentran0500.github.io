@@ -6,15 +6,36 @@
         <link rel = "stylesheet" type = "text/css" href = "CSS/index.css">
         <style>
             body {
-                background-image: url("img/KdDyvT.jpg");
+                background-image: url("img/sky.jpg");
                 backdrop-filter: blur(2px);
                 background-repeat: no-repeat;
                 background-size: cover;
                 }
+            #snowflakeContainer {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                display: none;
+            }
+
+            .snowflake {
+                position: fixed;
+                background-color: #CCC;
+                user-select: none;
+                z-index: 1000;
+                pointer-events: none;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+            }
         </style>
+        <script type = "text/JavaScript" src = "Javascript/animation.js"></script>
     </head>
-    <body>
-        <div class="bg-image"></div>
+    <body id = "body">
+        <div id="snowflakeContainer">
+            <span class="snowflake"></span>
+        </div>
+        <!-- <div class="bg-image"></div> -->
         <h1>Welcome to My page</h1>
         <div id = "menu">
             <a class="menu" href = "#abtme">About me</a>
@@ -27,6 +48,12 @@
                 My name is Tuyen, a curious man from Vietnam and try to learn HTML.
             </p>
         </div>
+        <p>
+            <button id = "snow" onclick = "mode(this.id)">Snow mode</button>
+        </p>
+        <p>
+            <button id = "sky" onclick="mode(this.id)">Sky mode</button>
+        </p>
     </body>
 
 
