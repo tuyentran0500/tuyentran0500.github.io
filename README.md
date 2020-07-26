@@ -6,7 +6,9 @@ We need to add description in `head` element: `<link rel="stylesheet" type = "te
 **How to apply Javascript**  
 - `<script src="js/assignment.js"></script>`  
 - `Display` in `div`  
+
 Note: Represent by ID: `#id`, by class: `.class_name`.  
+
 **Table tag**  
 - `<table>`: init  
 - `th`: table header
