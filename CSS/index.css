@@ -9,29 +9,44 @@ h2 {
     text-decoration-style: wavy;
 }
 
+a {
+    text-decoration: none;
+}
+/* table */
+#table {
+    text-align: center;
+}
+td {
+    
+    border: solid gray 2px;
+    width: 80px;
+}
+th {
+    border: solid gray 2px;
+    width: 80px;
+}
+.th {
+    max-width: 10px;
+}
 #menu{
     float: left;
-    width: 10%;
-    margin: 5px;
-    /* padding: 5px; */
-    border: 2px gray solid;
-    
+    width: 9%;
+    /* display: block; */
+    margin: 5px;  
 }
 .menu {
-    text-decoration: none;
     color: black;
     display: block;
-    padding: 2px;
+    padding: 5px;
     text-align: center;
     background-color: gainsboro;
-    border: 1px solid gray;
+    border: solid gray;
 }
-#content{
+.content{
     /* background-color: aliceblue; */
-    display: inline-block;
-    /* border: 2px solid gray; */
-    /* background-color: aliceblue */
-    color: white;
+    float: right;
+    width: 90%;
+    color: blanchedalmond;
 }
 button {
     /* position: fixed; */
@@ -39,7 +54,32 @@ button {
     color : white;
     background-color: gray;
 }
+/* Button to change mode */
+#snow {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    width: 90px;
+}
+#sky {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    width: 90px;
+}
+#nightsky {
+    position: absolute;
+    right: 20px;
+    top: 95px;
+    width: 90px;
+}
 
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
 
 .snowflake {
     position: fixed;
@@ -50,4 +90,4 @@ button {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-  }
+}

@@ -1,61 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My training routine</title>
-        <link rel = "stylesheet" type = "text/css" href = "CSS/index.css">
-        <style>
-            body {
-                background-image: url("img/sky.jpg");
-                backdrop-filter: blur(2px);
-                background-repeat: no-repeat;
-                background-size: cover;
-                }
-            #snowflakeContainer {
-                position: absolute;
-                left: 0px;
-                top: 0px;
-                display: none;
-            }
 
-            .snowflake {
-                position: fixed;
-                background-color: #CCC;
-                user-select: none;
-                z-index: 1000;
-                pointer-events: none;
-                border-radius: 50%;
-                width: 10px;
-                height: 10px;
-            }
-        </style>
-        <script type = "text/JavaScript" src = "Javascript/animation.js"></script>
-    </head>
-    <body id = "body">
-        <div id="snowflakeContainer">
-            <span class="snowflake"></span>
-        </div>
-        <!-- <div class="bg-image"></div> -->
-        <h1>Welcome to My page</h1>
-        <div id = "menu">
-            <a class="menu" href = "#abtme">About me</a>
-            <a class="menu">My skill</a>
-            <a class="menu">My love</a>
-        </div>
-        <div id="content">
-            <h2 id = "abtme">About me</h2>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my life</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <style>
+        body {
+            background-image: url("img/nightsky.jpg");
+            backdrop-filter: blur(10px);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script type="text/JavaScript" src="Javascript/animation.js"></script>
+    <script type="text/JavaScript" src="JavaScript/snowflake.js"></script>
+</head>
+
+<body id="body">
+    <div id="snowflakeContainer">
+        <span class="snowflake"></span>
+    </div>
+    <!-- <div class="bg-image"></div> -->
+    <h1>Welcome to My life</h1>
+    <div id="menu">
+        <a class="menu" href="#abtme">About me</a>
+        <a class="menu" href="#skill">My skill</a>
+        <a class="menu" href="love">My love</a>
+        <a class="menu" href="#goal">My goal</a>
+        <a class="menu" href="#schedule">My schedule</a>
+    </div>
+    <div>
+        <p>
+            <button id="snow" onclick="reset(runSnow()); generateSnowflakes()">Snow mode</button>
+        </p>
+        <p>
+            <button id="sky" onclick="mode(this.id)">Sky mode</button>
+        </p>
+        <p>
+            <button id="nightsky" onclick="mode(this.id)">Night view</button>
+        </p>
+    </div>
+
+    <div class="content">
+        <!-- About me -->
+        <div>
+            <h2 id="abtme">About me</h2>
             <p>
                 My name is Tuyen, a curious man from Vietnam and try to learn HTML.
+                I were born in Tuyen Quang, Vietnam, lived in there for 15 years until when I enrolled a top high school
+                in Hanoi.
+                In Hanoi, I studied in HUS High School for Gifted Student Vietnam.
+            </p>
+
+        </div>
+
+        <!-- skill -->
+        <div>
+            <h2 id="skill">My skill</h2>
+            <p>
+                My study's skills are good enough for me to pass with execellent grade.
+                however, my strength is logic-related subjects like Math, and Informatic.
+            </p>
+            <p>I earned the third prizes (Bronze medal) in the National Olympiad of Informatics</p>
+            <p>You can visit my Codeforces account <u><a href="https://codeforces.com/profile/gemini_man">here</a></u>
             </p>
         </div>
-        <p>
-            <button id = "snow" onclick = "mode(this.id)">Snow mode</button>
-        </p>
-        <p>
-            <button id = "sky" onclick="mode(this.id)">Sky mode</button>
-        </p>
-    </body>
+        <div>
+            <h2 id = "goal">My goal</h2>
+            <p>
+                In 2020, I want to achieve many things, includes: 
+            </p>
+            <ul> Study 
+                <li>Get 4.0 GPA in university and the scholarship</li>
+                <li>Take classes about Reinforcement Learning</li>
+                <li>Getting Master in Codeforces</li>
+                <li>Understand about Master Degree</li>
+                <li>Speak English better (Speaking at the weekend)</li>
+                <!-- <li></li> -->
+            </ul>
+            <ul> Personal life and saving
+                <li>Eat healthy foods, live healthy life (I bought Organic Whey and turmenic power for that hic...)</li>
+                <li>Save 435$ </li>
+                <li>Dress nicer (Maybe I should take a dressing course ??)</li>
+                <li>Work out: Getting 72 kg in the bulking process</li>
+                <li>Read 17 books (Still stuck at 8 books)</li>
+                <li>Running 2 days/ week (...COVID-19) </li>
+
+            </ul>
+        </div>
+        <div>
+            <h2 id = "schedule">My schedule</h2>
+            <table id = "table">
+                <tr>
+                    <th class = "th">-th</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td class = "th">1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Japanese</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class = "th">2</td>
+                    <td>Japanese</td>
+                    <td></td>
+                    <td>Iniad Intro</td>
+                    <td></td>
+                    <td>Philosophy Intro</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class = "th">3</td>
+                    <td>Intro to CS</td>
+                    <td>Japanese</td>
+                    <td>INIAD practice</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class = "th">4</td>
+                    <td></td>
+                    <td></td>
+                    <td>Japanese Cirumstance</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class = "th">5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Intro to CS</td>
+                    <td>INIAD Basic Exercise</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!-- secret -->
+        <div>
+            <p>
+                Password <input type="text" id="password">
+                <button type="submit" onclick="checkPass()"> submit </button>
+            </p>
+            <span>
+                <img id="secret">
+            </span>
+        </div>
+    </div>
 
 
 
+</body>
 </html>
