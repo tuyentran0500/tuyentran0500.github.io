@@ -8,7 +8,7 @@
     <style>
         body {
             background-image: url("img/nightsky.jpg");
-            /* backdrop-filter: blur(2px); */
+            backdrop-filter: blur(2px);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -32,13 +32,13 @@
     </div>
     <div>
         <p>
-            <button id="snow" onclick="reset(runSnow()); generateSnowflakes()">Snow mode</button>
+            <button id="snow" onclick="turnOn(); generateSnowflakes()">Snow mode</button>
         </p>
         <p>
             <button id="sky" onclick="mode(this.id)">Sky mode</button>
         </p>
         <p>
-            <button id="nightsky" onclick="mode(this.id)">Night view</button>
+            <button id="nightsky" onclick="turnOff(); mode(this.id)">Night view</button>
         </p>
     </div>
 

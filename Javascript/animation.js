@@ -8,6 +8,7 @@ function mode(image) {
 function reset(check){
   if (!check){
     image = "url('img/nightsky.jpg')";
+    // element.style.backgroundColor = "transparent";
     var element = document.getElementById("body");
     element.style.backgroundImage = image;
     // alert("Done");
