@@ -9,7 +9,7 @@
         body {
             background-image: url("img/nightsky.jpg");
             backdrop-filter: blur(2px);
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat; */
             background-size: cover;
         }
     </style>
@@ -31,15 +31,9 @@
         <a class="menu" href="#schedule">My schedule</a>
     </div>
     <div>
-        <p>
-            <button id="snow" onclick="turnOn(); generateSnowflakes()">Snow mode</button>
-        </p>
-        <p>
-            <button id="sky" onclick="mode(this.id)">Sky mode</button>
-        </p>
-        <p>
-            <button id="nightsky" onclick="turnOff(); mode(this.id)">Night view</button>
-        </p>
+        <button id="snow" onclick="turnOn(); generateSnowflakes()">Snow mode</button>
+        <button id="sky" onclick="mode(this.id)">Sky mode</button>
+        <button id="nightsky" onclick="turnOff(); mode(this.id)">Night view</button>
     </div>
 
     <div class="content">
@@ -67,11 +61,11 @@
             </p>
         </div>
         <div>
-            <h2 id = "goal">My goal</h2>
+            <h2 id="goal">My goal</h2>
             <p>
-                In 2020, I want to achieve many things, includes: 
+                In 2020, I want to achieve many things, includes:
             </p>
-            <ul> Study 
+            <ul> Study
                 <li>Get 4.0 GPA in university and the scholarship</li>
                 <li>Take classes about Reinforcement Learning</li>
                 <li>Getting Master in Codeforces</li>
@@ -90,10 +84,10 @@
             </ul>
         </div>
         <div>
-            <h2 id = "schedule">My schedule</h2>
-            <table id = "table">
+            <h2 id="schedule">My schedule</h2>
+            <table id="table">
                 <tr>
-                    <th class = "th">-th</th>
+                    <th class="th">-th</th>
                     <th>Mon</th>
                     <th>Tue</th>
                     <th>Wed</th>
@@ -102,7 +96,7 @@
                     <th>Sat</th>
                 </tr>
                 <tr>
-                    <td class = "th">1</td>
+                    <td class="th">1</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -111,7 +105,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td class = "th">2</td>
+                    <td class="th">2</td>
                     <td>Japanese</td>
                     <td></td>
                     <td>Iniad Intro</td>
@@ -120,7 +114,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td class = "th">3</td>
+                    <td class="th">3</td>
                     <td>Intro to CS</td>
                     <td>Japanese</td>
                     <td>INIAD practice</td>
@@ -129,7 +123,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td class = "th">4</td>
+                    <td class="th">4</td>
                     <td></td>
                     <td></td>
                     <td>Japanese Cirumstance</td>
@@ -138,7 +132,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td class = "th">5</td>
+                    <td class="th">5</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -157,10 +151,11 @@
             <span>
                 <img id="secret">
             </span>
+            <a id="top" href = "#">top</a>
         </div>
     </div>
 
 
-
 </body>
+
 </html>
