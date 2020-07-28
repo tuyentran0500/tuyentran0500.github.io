@@ -29,6 +29,26 @@ Note: Represent by ID: `#id`, by class: `.class_name`.
 **Margin, Padding, Border**  
 ![IMG](https://raw.githubusercontent.com/tuyentran0500/cs_exercise/master/11.2.%20CSS/layout.png)  
 
+**Different between setTimeout and setInterval**  
+- `setTimeout` is designed to execute a function after a certain of time.
+- `setInterval` is designed to execute a function **periodically** after a certain of time.  
+
+How to use:  
+- `setTimeout(function, time_in_milisecond)`, `setInterval(function, time_in_milisecond)` to start the count time.  
+- `clearTimeout(ID)`, `clearInterval(intervalId)` to clear the running process.  
+Example:  
+```
+var intervalId;
+function startInterval() {
+  cnt = 0;
+  intervalId = setInterval(updateContentInterval, 1000);
+}
+
+function stopInterval() {
+  clearInterval(intervalId);
+```  
+
+
 
 
 
