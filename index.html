@@ -13,7 +13,7 @@
         }
     </style>
     <script type="text/JavaScript" src="js/animation.js"></script>
-    <script type="text/JavaScript" src="js/snowflake.js"></script>
+    <script type="text/JavaScript" src="js/snowflake.js "></script>
     <title>Welcome to my life</title>
 </head>
 
@@ -26,9 +26,12 @@
     <div id="menu">
         <a class="menu" href="#abtme">About me</a>
         <a class="menu" href="#skill">My skill</a>
-        <a class="menu" href="love">My love</a>
+        <a class="menu" href="#love">My love</a>
         <a class="menu" href="#goal">My goal</a>
         <a class="menu" href="#schedule">My schedule</a>
+        <br>
+        <iframe width="300" height="380" src="https://open.spotify.com/embed/playlist/6R1KhvAjqhMyIbgQwcehgM"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
     <div>
         <button id="snow" onclick="turnOn(); generateSnowflakes()">Snow mode</button>
@@ -60,6 +63,24 @@
             <p>You can visit my Codeforces account <u><a href="https://codeforces.com/profile/gemini_man">here</a></u>
             </p>
         </div>
+
+        <div>
+            <h2 id="love">My love</h2>
+            <ul>
+                <li>I like to walk and spend a peaceful time to watch the sky.</li>
+                <li>Another self-satisfied hobbies of me is working out.<br>
+                    I love the exhaused feeling after every workout, and observe these muscle fibers recover by eating.
+                </li>
+                <li>It's more like a habit but I like to read, to learn more about new things.
+                    <br>My favorite story is "The Fountainhead".
+                </li>
+                <li>My model is a novel professor named Don Tillman, in the "Rosie's Project".
+                    <br> He is a quick learner, who can learn almost everything in a systematic way, but knows nothing
+                    about love.
+                </li>
+            </ul>
+        </div>
+
         <div>
             <h2 id="goal">My goal</h2>
             <p>
@@ -149,10 +170,13 @@
                 <button type="submit" onclick="checkPass()"> submit </button>
             </p>
             <img id="secret">
-            <a id="top" href = "#">top</a>
-
         </div>
+        <div>
+            <a id="top" href="#">Top</a>
+        </div>
+
     </div>
+
 
 
 </body>
