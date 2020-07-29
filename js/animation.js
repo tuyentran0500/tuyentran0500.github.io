@@ -30,3 +30,7 @@ function checkPass(){
   }
 }
 
+function info(page){
+  var element = document.getElementById("answer");
+  element.innerHTML = "<a href = 'https://www.facebook.com/WCTHV'>Facebook<\a><br><a href ='https://www.instagram.com/tbtuyen0500/'>Instagram: <\a>";
+}

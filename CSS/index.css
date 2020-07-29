@@ -11,6 +11,7 @@ h2 {
 
 a {
     text-decoration: none;
+    color: blanchedalmond;
 }
 /* table */
 #table {
@@ -57,10 +58,14 @@ button {
     background-color: gray;
 }
 #music {
-    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     border: #444444 solid 2px;
+}
+#feed {
+    background-color: #444444;
+    width: 100px;
+    text-align: center;    
 }
 /* Button to change mode */
 #snow {

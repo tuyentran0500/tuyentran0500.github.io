@@ -27,7 +27,7 @@ Note: Represent by ID: `#id`, by class: `.class_name`.
 - `td`: table data  
 
 **Margin, Padding, Border**  
-![IMG](https://raw.githubusercontent.com/tuyentran0500/cs_exercise/master/11.2.%20CSS/layout.png)  
+![IMG](img/layout.png)    
 
 **Different between setTimeout and setInterval**  
 - `setTimeout` is designed to execute a function after a certain of time.
@@ -47,6 +47,20 @@ function startInterval() {
 function stopInterval() {
   clearInterval(intervalId);
 ```  
+**Use form**  
+```
+  <form>
+    <label for="infor">Do you want to know me more?</label>
+    <select name = "contact">
+      <option value = "Yes">Yes</option>
+      <option value = "No">No</option>
+    </select>
+    <button onclick="info()">Submit</button>
+  </form>
+```  
+- `name` to use to submit.    
+- `value` to use for select buttom.  
+
 
 
 
