@@ -62,6 +62,10 @@ function stopInterval() {
 - `value` to use for select buttom.  
 
 
+function goPosition(x1, y1, x2, y2){
+  while (x1 != x2) x1 += (x1 < x2 ? 1 : -1);
+  while (y1 != y2) y1 += (y1 < y2 ? 1 : -1);
+}
 
 
 
