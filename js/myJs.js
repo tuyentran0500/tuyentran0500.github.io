@@ -113,7 +113,7 @@ $(document).ready(function () {
     audio.play();
     Swal.fire({
       title: textConfig.text7,
-      position: 'center',
+      position: 'bottom',
       html: true,
       width: 900,
       padding: "3em",
