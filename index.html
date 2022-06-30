@@ -1,195 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Chào câu</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <style>
-        body {
-            background-image: url("img/nightsky.jpg");
-            backdrop-filter: blur(2px);
-            /* background-repeat: no-repeat; */
-            background-size: cover;
-        }
-    </style>
-    <script type="text/JavaScript" src="js/animation.js"></script>
-    <script type="text/JavaScript" src="js/snowflake.js "></script>
-    <title>Welcome to my life</title>
-</head>
-
-<body id="body">
-    <div id="snowflakeContainer">
-        <span class="snowflake"></span>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinload.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href=" https://fonts.googleapis.com/css?family=Pacifico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Preloader -->
+      <div id="preloader">
+        <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+        </div>
+      </div>
+      <div id="bg"></div>
+      <div class="content">
+        <header>
+          <h2 id="text3">Cậu thích tớ có phải không nào ._.</h2>
+          <h4 id="text4">
+            Nếu cậu ko trả lời mà thoát ra tức là muốn làm người yêu rùi đó nha :v
+          </h4>
+        </header>
+        <button id="yes" type="button" class="btn btn-danger btn-lg">
+          Thích ơi là thíchhh <333
+        </button>
+        <button id="no" type="button" class="btn btn-info btn-lg">
+          Cậu mơ à :333
+        </button>
+      </div>
     </div>
-    <!-- <div class="bg-image"></div> -->
-    <h1>Welcome to My life</h1>
-    <div id="menu">
-        <a class="menu" href="#abtme">About me</a>
-        <a class="menu" href="#skill">My skill</a>
-        <a class="menu" href="#love">My love</a>
-        <a class="menu" href="#goal">My goal</a>
-        <a class="menu" href="#schedule">My schedule</a>
-        <br>
-        <iframe id = "music" width="300" height="380" src="https://open.spotify.com/embed/playlist/6R1KhvAjqhMyIbgQwcehgM"
-        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div>
-        <button id="snow" onclick="turnOn(); generateSnowflakes()">Snow mode</button>
-        <button id="sky" onclick="mode(this.id)">Sky mode</button>
-        <button id="nightsky" onclick="turnOff(); mode(this.id)">Night view</button>
-    </div>
-
-    <div class="content">
-        <!-- About me -->
-        <div>
-            <h2 id="abtme">About me</h2>
-            <p>
-                My name is Tuyen, a curious man from Vietnam and try to learn HTML.
-                I were born in Tuyen Quang, Vietnam, lived in there for 15 years until when I enrolled a top high school
-                in Hanoi.
-                In Hanoi, I studied in HUS High School for Gifted Student Vietnam.
-            </p>
-
-        </div>
-
-        <!-- skill -->
-        <div>
-            <h2 id="skill">My skill</h2>
-            <p>
-                My study's skills are good enough for me to pass with execellent grade.
-                however, my strength is logic-related subjects like Math, and Informatic.
-            </p>
-            <p>I earned the third prizes (Bronze medal) in the National Olympiad of Informatics</p>
-            <p>You can visit my Codeforces account <u><a href="https://codeforces.com/profile/gemini_man">here</a></u>
-            </p>
-        </div>
-
-        <div>
-            <h2 id="love">My love</h2>
-            <ul>
-                <li>I like to walk and spend a peaceful time to watch the sky.</li>
-                <li>Another self-satisfied hobbies of me is working out.<br>
-                    I love the exhaused feeling after every workout, and observe these muscle fibers recover by eating.
-                </li>
-                <li>It's more like a habit but I like to read, to learn more about new things.
-                    <br>My favorite story is "The Fountainhead".
-                </li>
-                <li>My model is a novel professor named Don Tillman, in the "Rosie's Project".
-                    <br> He is a quick learner, who can learn almost everything in a systematic way, but knows nothing
-                    about love.
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 id="goal">My goal</h2>
-            <p>
-                In 2020, I want to achieve many things, includes:
-            </p>
-            <ul> Study
-                <li>Get 4.0 GPA in university and the scholarship</li>
-                <li>Take classes about Reinforcement Learning</li>
-                <li>Getting Master in Codeforces</li>
-                <li>Understand about Master Degree</li>
-                <li>Speak English better (Speaking at the weekend)</li>
-                <!-- <li></li> -->
-            </ul>
-            <ul> Personal life and saving
-                <li>Eat healthy foods, live healthy life (I bought Organic Whey and turmenic power for that hic...)</li>
-                <li>Save 435$ </li>
-                <li>Dress nicer (Maybe I should take a dressing course ??)</li>
-                <li>Work out: Getting 72 kg in the bulking process</li>
-                <li>Read 17 books (Still stuck at 8 books)</li>
-                <li>Running 2 days/ week (...COVID-19) </li>
-
-            </ul>
-        </div>
-        <div>
-            <h2 id="schedule">My schedule</h2>
-            <table id="table">
-                <tr>
-                    <th class="th">-th</th>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                </tr>
-                <tr>
-                    <td class="th">1</td>
-                    <td>Listening and Speaking Exercise II</td>
-                    <td>Reading and Writing Exercise II</td>
-                    <td></td>
-                    <td>Listening and Speaking Exercise II</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="th">2</td>
-                    <td></td>
-                    <td></td>
-                    <td>Introduction to INIAD: Engineering(3Q)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="th">3</td>
-                    <td>Intro to CS</td>
-                    <td></td>
-                    <td>INIAD Practice IB2</td>
-                    <td></td>
-                    <td>World History</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="th">4</td>
-                    <td></td>
-                    <td>Intro to CS and Society</td>
-                    <td></td>
-                    <td></td>
-                    <td>Introduction to Business(4Q)</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="th">5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>Intro to CS</td>
-                    <td>INIAD Basic Exercise</td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-        <!-- secret -->
-        <div>
-            <p>
-                Password <input type="text" id="password">
-                <button type="submit" onclick="checkPass()"> submit </button>
-            </p>
-            <img id="secret">
-        </div>
-        <div>
-            <a id="top" href="#">Top</a>
-        </div>
-        <form>
-            <label for="infor">Do you want to know me more?</label>
-            <select name = "contact">
-                <option value = "Yes">Yes</option>
-                <option value = "No">No</option>
-            </select>
-            <button onclick="info()">Submit</button>
-        </form>
-        <text id = "answer"></text>
-        <!-- <div id = "feed">
-            <a href = "https://www.facebook.com/WCTHV"><img src = "img/facebook.png" width="20" height="20">Tuyên Trần</a>
-        </div> -->
-    </div>
-
-
-
-</body>
-
+    <!-- <audio autoplay src="./sound/videoplayback.mp3"></audio> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/myJs.js"></script>
+    <embed src="./sound/videoplayback.mp3" loop="true" autostart="true" width="2" height="0">
+  </body>
 </html>
