@@ -113,10 +113,10 @@ $(document).ready(function () {
     audio.play();
     Swal.fire({
       title: textConfig.text7,
+      position: 'center',
       html: true,
       width: 900,
-      padding: "5em",
-      marginTop: "100px" ,
+      padding: "3em",
       html: "<input type='text' class='form-control' id='txtReason'  placeholder='Whyyy'>",
       background: '#fff url("img/iput-bg.jpg")',
       backdrop: `
