@@ -7,7 +7,7 @@ const textConfig = {
   text6: "Thích ơi là thíchhh <3",
   text7: "lí do cậu thích tớ đi :vvvv",
   text8: "Gửi cho tớ <3",
-  text9: "Vì cậu đẹp try, cao hơn tớ, đặc biệt biết nấu cánh gà chiên mắm...",
+  text9: "Vì cậu đẹp try, cao hơn tớ, ga lăng, stand BTS, biết nấu ăn, có ielts, làm giỏi… và thích tớ.",
   text10: "Tớ cũng thích cậu, hihi",
   text11:
     "Cậu còn chờ gì nữa mà không ib tớ đi nào",
@@ -121,8 +121,8 @@ $(document).ready(function () {
       background: '#fff url("img/iput-bg.jpg")',
       backdrop: `
                     rgba(0,0,123,0.4)
-                    url("img/anhcuoi.png")
-                    100px 50px 
+                    url("img/anhcuoi.jpg")
+                    center center
                   `,
       showCancelButton: false,
       confirmButtonColor: "#3085d6",
